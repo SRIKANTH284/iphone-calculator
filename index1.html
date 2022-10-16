@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>iphone calculator</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div class="calculator_container">
+            <div class="calculator_iphone">
+                <!--display the number-->
+                <div class="calculator_input_display">
+                    <textarea cols="40" rows="7" id="calculator_input_Number_Previews"></textarea>
+                    <input type="text" id="calculator_input_Number">
+                </div>
+                <!--calculator button-->
+
+                <div class="calculator_button">
+                    <!--left button-->
+                    <div class="calculator_button_left3">
+                        <div class="calculator_button_left3_Top">
+                            <!--clear the input box-->
+                            <div class="calculator_button_FixedSize_Top" id="Calculator_input_AC">AC</div>
+                            <div class="calculator_button_FixedSize_Top" onclick="display('+/-')">+/-</div>
+                            <div class="calculator_button_FixedSize_Top" onclick="display('%')">%</div>
+                        </div>
+
+                        <!--middle button number-->
+                        <div class="calculator_button_left_Number">
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('9')">9</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('8')">8</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('7')">7</div>
+
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('6')">6</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('5')">5</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('4')">4</div>
+
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('3')">3</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('2')">2</div>
+                            <div class="calculator_button_Fixedsize_Number" onclick="display('1')">1</div>
+                        </div>
+
+                        <!--bottom button left-->
+                        <div class="calculator_button_left3_bottom">
+                            <div class="calculator_button_FixedSize_bottom" id="calculator_button_FixedSize_bottom_zero" onclick="display('0')">0</div>
+                            <div class="calculator_button_FixedSize_bottom" onclick="display('.')">.</div>
+                        </div>
+                    </div>
+                    <!--right button -->
+                    <div class="calculator_button_Right">
+                        <div class="calculator_button_FixedSize_Orange" onclick="display('/')">÷</div>
+                        <div class="calculator_button_FixedSize_Orange" onclick="display('*')">×</div>
+                        <div class="calculator_button_FixedSize_Orange" onclick="display('-')">-</div>
+                        <div class="calculator_button_FixedSize_Orange" onclick="display('+')">+</div>
+                        <!--answer button-->
+                        <div class="calculator_button_FixedSize_Orange" onclick="displaySolve()">=</div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--javascript file link html file-->
+        <script src="index2.js"></script>
+        
+    </body>
+</html>
